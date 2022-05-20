@@ -1,0 +1,36 @@
+﻿@page
+@model IndexModel
+@{
+    Layout = "_Layout";
+}
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+<div class="container">
+  <form method="post">
+    <p>Welcome</p>
+    <input type="text" placeholder="Name" name="name"><br>
+    <input type="text" placeholder="SurName" name="surname"><br>
+    <input type="date" placeholder="Birthday" name="birthday"><br>
+    <input type="text" placeholder="Profession" name="profession"><br>
+    <input type="text" placeholder="School" name="school"><br>
+    <input type="submit" value="Sign in"><br>
+
+  </form>
+
+  <div class="drops">
+    <div class="drop drop-1"></div>
+    <div class="drop drop-2"></div>
+    <div class="drop drop-3"></div>
+    <div class="drop drop-4"></div>
+    <div class="drop drop-5"></div>
+  </div>
+</div>
+<div class = "my_container">
+<h2>@Model.Message1</h2>
+<br />
+<h2>@Model.Message2</h2>
+<br />
+<h2>@Model.Message3</h2>
+<br />
+<h2>@Model.Message4</h2>
+</div>
